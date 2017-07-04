@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Frontend\HomeController@index');
 
 Route::get('/backend','Backend\AdminController@index');
 Route::get('/backend/basic-table','Backend\AdminController@basic_table');
