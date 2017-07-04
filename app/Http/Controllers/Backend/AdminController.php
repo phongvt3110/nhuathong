@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: phongvt
- * Date: 03/07/2017
- * Time: 01:10
- */
-
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
@@ -18,9 +11,40 @@ class AdminController extends Controller
         return view('backend/index',['data' => isset($data) ? $data : null]);
     }
     public function error404(){
-        return view('backend/error404');
+        $data = [];
+        return view('backend/error404',['data' => isset($data) ? $data : null]);
     }
-    public function show(){
-        return view('backend/show');
+    public function basic_table(){
+        return view('backend/basic_table',['data' => isset($data) ? $data : null]);
+    }
+    public function blank(){
+        return view('backend/blank',['data' => isset($data) ? $data : null]);
+    }
+    public function buttons(){
+        return view('backend/buttons',['data' => isset($data) ? $data : null]);
+    }
+    public function chart_chartjs(){
+        return view('backend/chart_chart',['data' => isset($data) ? $data : null]);
+    }
+    public function form_component(){
+        return view('backend/form_component',['data' => isset($data) ? $data : null]);
+    }
+    public function form_validation(){
+        return view('backend/form_validation',['data' => isset($data) ? $data : null]);
+    }
+    public function general(){
+        return view('backend/general',['data' => isset($data) ? $data : null]);
+    }
+    public function grids(){
+        return view('backend/grids',['data' => isset($data) ? $data : null]);
+    }
+    public function login(){
+        return view('backend/login',['data' => isset($data) ? $data : null]);
+    }
+    public function profile(){
+        return view('backend/profile',['data' => isset($data) ? $data : null]);
+    }
+    public function widgets(){
+        return view('backend/widgets',['data' => isset($data) ? $data : null]);
     }
 }

@@ -6,31 +6,31 @@
     <meta name="description" content="Creative - Bootstrap 3 Responsive Admin Template">
     <meta name="author" content="GeeksLabs">
     <meta name="keyword" content="Creative, Dashboard, Admin, Template, Theme, Bootstrap, Responsive, Retina, Minimal">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="{{asset('resources/assets/niceadmin/img/favicon.png')}}">
 
     <title>Form Component | Creative - Bootstrap 3 Responsive Admin Template</title>
 
     <!-- Bootstrap CSS -->    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{asset('resources/assets/niceadmin/css/bootstrap.min.css')}}" rel="stylesheet">
     <!-- bootstrap theme -->
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="{{asset('resources/assets/niceadmin/css/bootstrap-theme.css')}}" rel="stylesheet">
     <!--external css-->
     <!-- font icon -->
-    <link href="css/elegant-icons-style.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="{{asset('resources/assets/niceadmin/css/elegant-icons-style.css')}}" rel="stylesheet" />
+    <link href="{{asset('resources/assets/niceadmin/css/font-awesome.min.css')}}" rel="stylesheet" />
     <!-- date picker -->
     
     <!-- color picker -->
     
     <!-- Custom styles -->
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/style-responsive.css" rel="stylesheet" />
+    <link href="{{asset('resources/assets/niceadmin/css/style.css')}}" rel="stylesheet">
+    <link href="css/style-responsive.css')}}" rel="stylesheet" />
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-      <script src="js/lte-ie7.js"></script>
+      <script src="{{asset('resources/assets/niceadmin/js/html5shiv.js')}}"></script>
+      <script src="{{asset('resources/assets/niceadmin/js/respond.min.js')}}"></script>
+      <script src="{{asset('resources/assets/niceadmin/js/lte-ie7.js')}}"></script>
     <![endif]-->
 
   </head>
@@ -45,7 +45,7 @@
             </div>
 
             <!--logo start-->
-            <a href="index.blade.php" class="logo">Nice <span class="lite">Admin</span></a>
+          <a href="{{action('Backend\AdminController@index')}}" class="logo">Quản trị <span class="lite">Hệ thống</span></a>
             <!--logo end-->
 
             <div class="nav search-row" id="top_menu">
@@ -162,7 +162,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini.jpg"></span>
+                                    <span class="photo"><img alt="avatar" href="{{asset('resources/assets/niceadmin/img/avatar-mini.jpg')}}"></span>
                                     <span class="subject">
                                     <span class="from">Greg  Martin</span>
                                     <span class="time">1 min</span>
@@ -174,7 +174,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini2.jpg"></span>
+                                    <span class="photo"><img alt="avatar" href="{{asset('resources/assets/niceadmin/img/avatar-mini2.jpg')}}"></span>
                                     <span class="subject">
                                     <span class="from">Bob   Mckenzie</span>
                                     <span class="time">5 mins</span>
@@ -186,7 +186,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini3.jpg"></span>
+                                    <span class="photo"><img alt="avatar" href="{{asset('resources/assets/niceadmin/img/avatar-mini3.jpg')}}"></span>
                                     <span class="subject">
                                     <span class="from">Phillip   Park</span>
                                     <span class="time">2 hrs</span>
@@ -198,7 +198,7 @@
                             </li>
                             <li>
                                 <a href="#">
-                                    <span class="photo"><img alt="avatar" src="./img/avatar-mini4.jpg"></span>
+                                    <span class="photo"><img alt="avatar" href="{{asset('resources/assets/niceadmin/img/avatar-mini4.jpg')}}"></span>
                                     <span class="subject">
                                     <span class="from">Ray   Munoz</span>
                                     <span class="time">1 day</span>
@@ -264,7 +264,7 @@
                     <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
-                                <img alt="" src="img/avatar1_small.jpg">
+                                <img alt="" src="{{asset('resources/assets/niceadmin/img/avatar1_small.jpg')}}">
                             </span>
                             <span class="username">Jenifer Smith</span>
                             <b class="caret"></b>
@@ -284,7 +284,7 @@
                                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                             </li>
                             <li>
-                                <a href="login.html"><i class="icon_key_alt"></i> Log Out</a>
+                                <a href="{{action('Backend\AdminController@login')}}"><i class="icon_key_alt"></i> Log Out</a>
                             </li>
                             <li>
                                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
@@ -307,7 +307,7 @@
               <!-- sidebar menu start-->
               <ul class="sidebar-menu">                
                   <li class="active">
-                      <a class="" href="index.blade.php">
+                      <a class="" href="{{action('Backend\AdminController@index')}}">
                           <i class="icon_house_alt"></i>
                           <span>Dashboard</span>
                       </a>
@@ -319,8 +319,8 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="form_component.html">Form Elements</a></li>                          
-                          <li><a class="" href="form_validation.html">Form Validation</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@form_component')}}">Form Elements</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@form_validation')}}">Form Validation</a></li>
                       </ul>
                   </li>       
                   <li class="sub-menu">
@@ -330,19 +330,19 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="general.html">Components</a></li>
-                          <li><a class="" href="buttons.html">Buttons</a></li>
-                          <li><a class="" href="grids.html">Grids</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@general')}}">Components</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@buttons')}}">Buttons</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@grids')}}">Grids</a></li>
                       </ul>
                   </li>
                   <li>
-                      <a class="" href="widgets.html">
+                      <a class="" href="{{action('Backend\AdminController@widgets')}}">
                           <i class="icon_genius"></i>
                           <span>Widgets</span>
                       </a>
                   </li>
                   <li>                     
-                      <a class="" href="chart-chartjs.html">
+                      <a class="" href="{{action('Backend\AdminController@chart_chartjs')}}">
                           <i class="icon_piechart"></i>
                           <span>Charts</span>
                           
@@ -357,7 +357,7 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="basic_table.html">Basic Table</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@basic_table')}}">Basic Table</a></li>
                       </ul>
                   </li>
                   
@@ -368,10 +368,10 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">                          
-                          <li><a class="" href="profile.html">Profile</a></li>
-                          <li><a class="" href="login.html"><span>Login Page</span></a></li>
-                          <li><a class="" href="blank.html">Blank Page</a></li>
-                          <li><a class="" href="error404.blade.php">404 Error</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@profile')}}">Profile</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@login')}}"><span>Login Page</span></a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@blank')}}">Blank Page</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@error404')}}">404 Error</a></li>
                       </ul>
                   </li>
                   
@@ -388,7 +388,7 @@
 				<div class="col-lg-12">
 					<h3 class="page-header"><i class="fa fa-file-text-o"></i> Form elements</h3>
 					<ol class="breadcrumb">
-						<li><i class="fa fa-home"></i><a href="index.blade.php">Home</a></li>
+						<li><i class="fa fa-home"></i><a href="{{action('Backend\AdminController@index')}}">Home</a></li>
 						<li><i class="icon_document_alt"></i>Forms</li>
 						<li><i class="fa fa-file-text-o"></i>Form elements</li>
 					</ol>
@@ -1032,34 +1032,34 @@
   </section>
   <!-- container section end -->
     <!-- javascripts -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/jquery.js')}}"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/bootstrap.min.js')}}"></script>
     <!-- nice scroll -->
-    <script src="js/jquery.scrollTo.min.js"></script>
-    <script src="js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/jquery.scrollTo.min.js')}}"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/jquery.nicescroll.js')}}" type="text/javascript"></script>
 
     <!-- jquery ui -->
-    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/jquery-ui-1.9.2.custom.min.js')}}"></script>
 
     <!--custom checkbox & radio-->
-    <script type="text/javascript" src="js/ga.js"></script>
+    <script type="text/javascript" src="{{asset('resources/assets/niceadmin/js/ga.js')}}"></script>
     <!--custom switch-->
-    <script src="js/bootstrap-switch.js"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/bootstrap-switch.js')}}"></script>
     <!--custom tagsinput-->
-    <script src="js/jquery.tagsinput.js"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/jquery.tagsinput.js')}}"></script>
     
     <!-- colorpicker -->
    
     <!-- bootstrap-wysiwyg -->
-    <script src="js/jquery.hotkeys.js"></script>
-    <script src="js/bootstrap-wysiwyg.js"></script>
-    <script src="js/bootstrap-wysiwyg-custom.js"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/jquery.hotkeys.js')}}"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/bootstrap-wysiwyg.js')}}"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/bootstrap-wysiwyg-custom.js')}}"></script>
     <!-- ck editor -->
-    <script type="text/javascript" src="assets/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="{{asset('resources/assets/niceadmin/assets/ckeditor/ckeditor.js')}}"></script>
     <!-- custom form component script for this page-->
-    <script src="js/form-component.js"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/form-component.js')}}"></script>
     <!-- custome script for all page -->
-    <script src="js/scripts.js"></script>
+    <script src="{{asset('resources/assets/niceadmin/js/scripts.js')}}"></script>
 
 
   </body>
