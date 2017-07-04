@@ -7,7 +7,11 @@ use App\Http\Controllers\Controller;
 class AdminController extends Controller
 {
     public function index(){
-        $data = ['mobile' => ['iphone','Samsung']];
+        $data = ['mobile' => [
+                                'iphone',
+                                'Samsung'
+                        ]
+                ];
         return view('backend/index',['data' => isset($data) ? $data : null]);
     }
     public function error404(){
