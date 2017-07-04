@@ -24,7 +24,7 @@ class AdminController extends Controller
         return view('backend/buttons',['data' => isset($data) ? $data : null]);
     }
     public function chart_chartjs(){
-        return view('backend/chart_chart',['data' => isset($data) ? $data : null]);
+        return view('backend/chart_chartjs',['data' => isset($data) ? $data : null]);
     }
     public function form_component(){
         return view('backend/form_component',['data' => isset($data) ? $data : null]);

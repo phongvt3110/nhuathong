@@ -482,7 +482,7 @@
                                               <div class="activity-body act-in">
                                                   <span class="arrow"></span>
                                                   <div class="text">
-                                                      <a href="#" class="activity-img"><img class="avatar" src="{{asset('resources/assets/niceadmin/img/chat-avatar.jpg" alt=""></a>
+                                                      <a href="#" class="activity-img"><img class="avatar" src="{{asset('resources/assets/niceadmin/img/chat-avatar.jpg')}}" alt=""></a>
                                                       <p class="attribution"><a href="#">Jonatanh Doe</a> at 4:25pm, 30th Octmber 2014</p>
                                                       <p>It is a long established fact that a reader will be distracted layout</p>
                                                   </div>
@@ -502,7 +502,7 @@
                                               <div class="activity-body act-in">
                                                   <span class="arrow"></span>
                                                   <div class="text">
-                                                      <a href="#" class="activity-img"><img class="avatar" src="{{asset('resources/assets/niceadmin/img/chat-avatar.jpg" alt=""></a>
+                                                      <a href="#" class="activity-img"><img class="avatar" src="{{asset('resources/assets/niceadmin/img/chat-avatar.jpg')}}" alt=""></a>
                                                       <p class="attribution"><a href="#">Rose Crack</a> at 5:25am, 30th Octmber 2014</p>
                                                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                                                   </div>
@@ -542,7 +542,7 @@
                                               <div class="activity-body act-in">
                                                   <span class="arrow"></span>
                                                   <div class="text">
-                                                      <a href="#" class="activity-img"><img class="avatar" src="{{asset('resources/assets/niceadmin/img/chat-avatar.jpg" alt=""></a>
+                                                      <a href="#" class="activity-img"><img class="avatar" src="{{asset('resources/assets/niceadmin/img/chat-avatar.jpg')}}" alt=""></a>
                                                       <p class="attribution"><a href="#">Layla night</a> at 5:25am, 30th Octmber 2014</p>
                                                       <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                                                   </div>

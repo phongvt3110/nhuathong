@@ -291,7 +291,7 @@
                                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
                             </li>
                             <li>
-                                <a href="login.blade.php"><i class="icon_key_alt"></i> Log Out</a>
+                                <a href="{{action('Backend\AdminController@login')}}"><i class="icon_key_alt"></i> Log Out</a>
                             </li>
                             <li>
                                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
@@ -326,8 +326,8 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="form_component.blade.php">Form Elements</a></li>
-                          <li><a class="" href="form_validation.blade.php">Form Validation</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@form_component')}}">Form Elements</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@form_validation')}}">Form Validation</a></li>
                       </ul>
                   </li>       
                   <li class="sub-menu">
@@ -337,19 +337,19 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="general.blade.php">Elements</a></li>
-                          <li><a class="" href="buttons.blade.php">Buttons</a></li>
-                          <li><a class="" href="grids.blade.php">Grids</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@general')}}">Elements</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@buttons')}}">Buttons</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@grids')}}">Grids</a></li>
                       </ul>
                   </li>
                   <li>
-                      <a class="" href="widgets.blade.php">
+                      <a class="" href="{{action('Backend\AdminController@widgets')}}">
                           <i class="icon_genius"></i>
                           <span>Widgets</span>
                       </a>
                   </li>
                   <li>                     
-                      <a class="" href="chart_chartjs.blade.php">
+                      <a class="" href="{{action('Backend\AdminController@chart_chartjs')}}">
                           <i class="icon_piechart"></i>
                           <span>Charts</span>
                           
@@ -364,7 +364,7 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">
-                          <li><a class="" href="basic_table.blade.php">Basic Table</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@basic_table')}}">Basic Table</a></li>
                       </ul>
                   </li>
                   
@@ -375,9 +375,9 @@
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       <ul class="sub">                          
-                          <li><a class="" href="profile.blade.php">Profile</a></li>
-                          <li><a class="" href="login.blade.php"><span>Login Page</span></a></li>
-                          <li><a class="" href="blank.blade.php">Blank Page</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@profile')}}">Profile</a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@login')}}"><span>Login Page</span></a></li>
+                          <li><a class="" href="{{action('Backend\AdminController@blank')}}">Blank Page</a></li>
                           <li><a class="" href="{{action('Backend\AdminController@error404')}}">404 Error</a></li>
                       </ul>
                   </li>

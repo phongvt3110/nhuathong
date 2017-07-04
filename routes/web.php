@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/backend','Backend\AdminController@index');
-Route::get('/backend/basic_table','Backend\AdminController@basic_table');
+Route::get('/backend/basic-table','Backend\AdminController@basic_table');
 Route::get('/backend/blank','Backend\AdminController@blank');
 Route::get('/backend/buttons','Backend\AdminController@buttons');
 Route::get('/backend/chart-chartjs','Backend\AdminController@chart_chartjs');
